@@ -187,13 +187,12 @@ function searchData(value)
                 <button onclick='deleteData(${i})' id="Delete"> Delete</button>
                 </td>
             </tr>
-            `
+            `;
             }
         }
    
         else
         {
-    
             if(dataPro[i].category.includes(value.toLowerCase())){
                 table +=
                 `<tr>
@@ -213,7 +212,7 @@ function searchData(value)
                 <button onclick='deleteData(${i})' id="Delete"> Delete</button>
                 </td>
             </tr>
-            `
+            `;
             }
         } 
     } 
