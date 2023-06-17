@@ -163,10 +163,12 @@ function searchMode(id)
 function searchData(value)
 {
     let table;
-    for(let i=0;i<dataPro.length;i++){
+    for(let i=0;i<dataPro.length;i++)
+    {
         if(searchmood == 'title')
         {
-            if(dataPro[i].title.includes(value.toLowerCase())){
+            if(dataPro[i].title.includes(value.toLowerCase()))
+            {
                 table +=
                 `<tr>
                 <td> ${i}</td>
@@ -185,11 +187,12 @@ function searchData(value)
                 <button onclick='deleteData(${i})' id="Delete"> Delete</button>
                 </td>
             </tr>
-            `;
-        }
+            `
+            }
         }
    
-        else{
+        else
+        {
     
             if(dataPro[i].category.includes(value.toLowerCase())){
                 table +=
@@ -210,9 +213,9 @@ function searchData(value)
                 <button onclick='deleteData(${i})' id="Delete"> Delete</button>
                 </td>
             </tr>
-            `;
-        }
-    } 
+            `
+            }
+        } 
     } 
   document.getElementById('tbody').innerHTML = table ; 
   }
