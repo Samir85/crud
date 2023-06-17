@@ -163,9 +163,10 @@ function searchMode(id)
 function searchData(value)
 {
     let table;
-    for (let i= 0 ; i<dataPro.length ; i++)
+for (let i= 0 ; i<dataPro.length ; i++)
 {
-        if(searchmood == 'title'){
+        if(searchmood == 'title')
+        {
             if(dataPro.title.includes(value.toLowerCase()))
                     {
                     table +=
@@ -180,7 +181,7 @@ function searchData(value)
                             <td> ${dataPro[i].category}</td>
                             <td><button onclick='upadteData(${i})'id="update"> Update</button></td>
                             <td><button onclick='deleteData(${i})' id="Delete"> Delete</button></td>
-                        </tr>`;  
+                        </tr>`  
                     }
         }
     else{
@@ -198,7 +199,7 @@ function searchData(value)
                             <td> ${dataPro[i].category}</td>
                             <td><button onclick='upadteData(${i})'id="update"> Update</button></td>
                             <td><button onclick='deleteData(${i})' id="Delete"> Delete</button></td>
-                        </tr>`;
+                        </tr>`
                         }   
     } 
 }
