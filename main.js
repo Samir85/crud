@@ -175,9 +175,8 @@ function searchData(value)
                             <td> ${dataPro[i].price}</td>
                             <td> ${dataPro[i].taxes}</td>
                             <td> ${dataPro[i].ads}</td>
-                            <td>${dataPro[i].discount}</td>
+                            <td>${dataPro[i].ads}</td>
                             <td>${dataPro[i].total}</td>
-                            <td> ${dataPro[i].count}</td>
                             <td> ${dataPro[i].category}</td>
                             <td><button onclick='upadteData(${i})'id="update"> Update</button></td>
                             <td><button onclick='deleteData(${i})' id="Delete"> Delete</button></td>
@@ -197,9 +196,8 @@ function searchData(value)
                             <td> ${dataPro[i].price}</td>
                             <td> ${dataPro[i].taxes}</td>
                             <td> ${dataPro[i].ads}</td>
-                            <td>${dataPro[i].discount}</td>
+                            <td>${dataPro[i].ads}</td>
                             <td>${dataPro[i].total}</td>
-                            <td> ${dataPro[i].count}</td>
                             <td> ${dataPro[i].category}</td>
                             <td><button onclick='upadteData(${i})'id="update"> Update</button></td>
                             <td><button onclick='deleteData(${i})' id="Delete"> Delete</button></td>
