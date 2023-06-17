@@ -165,8 +165,9 @@ function searchData(value)
     let table;
    if(searchmood == 'title')
    {
-    for(let i=0;i<dataPro.length;i++){
+    for(let i=0 ; i< dataPro.length ; i++){
         if(dataPro[i].title.includes(value.toLowerCase())){
+            console.log(i)
                 table +=
                 `<tr>
                 <td> ${i} </td>
@@ -185,7 +186,7 @@ function searchData(value)
     } 
     }  
   else{
-    for(let i=0;i<dataPro.length;i++){
+    for(let i=0 ; i<dataPro.length ; i++){
         if(dataPro[i].category.includes(value.toLowerCase())){
                 table +=
                 `<tr>
