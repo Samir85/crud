@@ -163,10 +163,35 @@ function searchMode(id)
 function searchData(value)
 {
     let table;
-   if(searchmood == 'title')
-   {
     for(let i=0;i<dataPro.length;i++){
-        if(dataPro[i].title.includes(value.toLowerCase())){
+        if(searchmood == 'title')
+        {
+            if(dataPro[i].title.includes(value.toLowerCase())){
+                table +=
+                `<tr>
+                <td> ${i}</td>
+                <td> ${dataPro[i].title}</td>
+                <td> ${dataPro[i].price}</td>
+                <td> ${dataPro[i].taxes}</td>
+                <td> ${dataPro[i].ads}</td>
+                <td> ${dataPro[i].discount}</td>
+                <td>${dataPro[i].total}</td>
+                <td>${dataPro[i].count}</td>
+                <td>${dataPro[i].category}</td>
+                <td>
+                <button onclick='upadteData(${i})'id="update"> Update</button>
+                </td>
+                <td>
+                <button onclick='deleteData(${i})' id="Delete"> Delete</button>
+                </td>
+            </tr>
+            `;
+        }
+        }
+   
+        else{
+    
+            if(dataPro[i].category.includes(value.toLowerCase())){
                 table +=
                 `<tr>
                 <td> ${i}</td>
@@ -188,31 +213,7 @@ function searchData(value)
             `;
         }
     } 
-    }  
-  else{
-    for(let i=0;i<dataPro.length;i++){
-        if(dataPro[i].category.includes(value.toLowerCase())){
-                table +=
-                `<tr>
-                <td> ${i}</td>
-                <td> ${dataPro[i].title}</td>
-                <td> ${dataPro[i].price}</td>
-                <td> ${dataPro[i].taxes}</td>
-                <td> ${dataPro[i].ads}</td>
-                <td> ${dataPro[i].discount}</td>
-                <td>${dataPro[i].total}</td>
-                <td>${dataPro[i].count}</td>
-                <td>${dataPro[i].category}</td>
-                <td>
-                <button onclick='upadteData(${i})'id="update"> Update</button>
-                </td>
-                <td>
-                <button onclick='deleteData(${i})' id="Delete"> Delete</button>
-                </td>
-            </tr>
-            `;
-        }
     } 
+  document.getElementById('tbody').innerHTML = table ; 
   }
-  document.getElementById('tbody').innerHTML = table ;  
-}
+   
