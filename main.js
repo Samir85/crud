@@ -93,7 +93,7 @@ function readData()
      {     
     table +=
     `<tr>
-    <td> ${i+1} </td>
+    <td> ${i} </td>
     <td> ${dataPro[i].title}</td>
     <td> ${dataPro[i].price}</td>
     <td> ${dataPro[i].taxes}</td>
