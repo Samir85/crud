@@ -212,7 +212,7 @@ function searchData(value)
                 <button onclick='deleteData(${i})' id="Delete"> Delete</button>
                 </td>
             </tr>
-            `;
+            `
             }
         } 
     } 
